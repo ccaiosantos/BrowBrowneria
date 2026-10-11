@@ -1,8 +1,24 @@
 HELP.md
 target/
+out/
+build/
+*.log
+*.class
+
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### Secrets e config local ###
+.env
+.env.*
+!.env.example
+application-local.properties
+application-secret.properties
+**/application-local.properties
+**/application-secret.properties
 
 ### STS ###
 .apt_generated
@@ -25,9 +41,10 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
+
+### OS ###
+.DS_Store
+Thumbs.db

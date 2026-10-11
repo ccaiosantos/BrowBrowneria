@@ -1,0 +1,9 @@
+# Copie este arquivo para application-local.properties e preencha.
+# application-local.properties NÃO vai para o Git.
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/browbrowneria
+spring.datasource.username=postgres
+spring.datasource.password=SUA_SENHA
+
+jwt.secret=troque-esta-chave-para-uma-string-longa-aleatoria-32b+
+jwt.expiration-ms=3600000
